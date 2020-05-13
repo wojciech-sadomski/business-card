@@ -5,23 +5,31 @@
     <meta name="viewport" content="width=  , initial-scale=1.0" />
     <title>Wizytówka</title>
     <link href="normalize.css" rel="stylesheet" type="text/css" />
-    <link href="sytle.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <main>
-      <article>
-        <img />
-        <header>
-          <h1>Heaerd</h1>
-          <p>Stanowisko</p>
+    <main class="main">
+      <article class="person">
+        <img
+          class="person__picture"
+          src="avatar.png"
+          alt="Zdjęcie Wojciech Sadomski"
+        />
+        <header class="person__info">
+          <h1 class="person__name">Wojciech Sadomski</h1>
+          <p class="person__position">Stanowisko</p>
         </header>
-        <p>
-          Programista z kilkunastoletnim doświadczeniem, fotograf, operator
-          drona, właściciel Sokoła Millennium (na razie tylko z Lego), prelegent
-          i szkoleniowiec. Uwielbia eksperymentować z nowymi technologiami, w
-          swojej twórczości ocierając się o sztukę.
+        <p class="person__description">
+          Programista z
+          <strong class="special">kilkunastoletnim</strong> doświadczeniem,
+          fotograf, operator drona, właściciel Sokoła Millennium (na razie tylko
+          z Lego), prelegent i szkoleniowiec. Uwielbia eksperymentować z nowymi
+          technologiami, w swojej twórczości ocierając się o sztukę.
         </p>
-        <p>W sieci: Facebook, GitHub, Instagram.</p>
+        <p class="person__description">
+          W sieci: <a class="person__link" href="#">Facebook</a>,
+          <a class="person__link" href="#">Github</a>.
+        </p>
       </article>
     </main>
   </body>
