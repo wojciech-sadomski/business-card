@@ -21,20 +21,30 @@ body {
   padding: 32px;
 }
 .person {
+  display: flex;
+  align-items: flex-start; /* Obrazek nie jest rozciągany */
 }
-.person.description {
+.person__description {
   font-size: 16px;
   line-height: 22px;
+  margin: 0px;
+}
+.person__description--with-marigin {
+  margin-bottom: 22px;
 }
 .person__link {
   color: #e20613;
+  text-decoration: none;
 }
 .person__name {
   font-size: 36px;
   font-weight: normal;
   margin: 0;
 }
-.person.picture {
+.person__picture {
+  margin-right: 32px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .person__position {
   font-size: 18;
@@ -42,9 +52,8 @@ body {
   margin: 0;
   color: #545454;
 }
-.person.picture {
-}
-.person.info {
+.person__info {
+  margin-bottom: 24px;
 }
 .special {
   font-weight: normal;
